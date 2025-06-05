@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom File Uploader</title>
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <!-- TODO: edit action so it points to the API endpoint -->
+    <form action="http://localhost:3000/media" method="post" enctype="multipart/form-data">
+      <label for="image">Image</label>
+      <input type="file" name="image">
+      <input type="hidden" name="date" id="upload-date">
+
+      <button>Submit</button>
+    </form>
+    <script src="media.js"></script>
+  </body>
+</html>
